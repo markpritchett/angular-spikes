@@ -1,0 +1,6 @@
+<ng-container
+  *ngIf="isAuthenticated$ | async as isAuthenticated; else redirectToLogin"
+>
+  <ng-content></ng-content>
+</ng-container>
+<ng-template #redirectToLogin>Redirecting to Login...</ng-template>
